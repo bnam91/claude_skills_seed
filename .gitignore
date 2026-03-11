@@ -1,0 +1,11 @@
+# 토큰 및 인증 파일
+**/tokens/
+**/*token*.json
+**/*secret*
+**/*.env
+**/config.json
+**/drives.json
+**/favorites.json
+__pycache__/
+*.pyc
+.DS_Store
