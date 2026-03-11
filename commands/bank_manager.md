@@ -1,9 +1,21 @@
-구글 시트 '고야내부용'에 입금요청을 등록하는 스킬이야.
+구글 시트에 입금요청을 등록하는 스킬이야.
 스크립트 경로: ~/Documents/claude_skills/payment_request/payment_request.py
 
-## 시트 정보
-- 스프레드시트 ID: 1CK2UXTy7HKjBe2T0ovm5hfzAAKZxZAR_ev3cbTPOMPs
-- 시트명: 고야내부용
+## ⚠️ 초기 설정 필요
+
+처음 사용 전에 아래 두 가지를 `payment_request.py` 상단에 직접 입력해줘:
+
+```python
+SPREADSHEET_ID = "여기에_스프레드시트_ID_또는_URL_입력"
+SHEET_NAME = "여기에_시트명_입력"
+```
+
+- **스프레드시트 ID**: URL에서 추출 → `https://docs.google.com/spreadsheets/d/<여기>/edit`
+- **시트명**: 하단 탭에 표시된 이름 (예: Sheet1, 입금요청 등)
+
+## 시트 정보 (현재 설정값)
+- 스프레드시트 ID: 설정 필요
+- 시트명: 설정 필요
 - 열 구성: E=항목, F=받는사람, I=계좌번호, J=주민/사업자번호, K=금액, P=상태(입금요청)
 
 ## 자주쓰는 곳 (favorites.json)
