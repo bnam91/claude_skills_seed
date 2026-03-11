@@ -1,9 +1,15 @@
 맥 캘린더(Calendar) 앱을 제어하는 스킬이야.
 스크립트 경로: ~/Documents/claude_skills/app_calendar_control/app_calendar_control.py
 
-## 캘린더 목록
-- 집, 직장, 소문의섬, 27호, 유튜브_잘사는김대리
-- coq3820@gmail.com (현빈 개인), jisu170714@gmail.com (지수)
+## 캘린더 목록 확인 (먼저 실행)
+
+캘린더 이름은 사람마다 달라. 명령 실행 전 먼저 목록을 조회해서 실제 이름을 확인해줘:
+
+```bash
+python3 ~/Documents/claude_skills/app_calendar_control/app_calendar_control.py --list-cals
+```
+
+이후 조회/추가/삭제 시 이 목록에서 확인한 **실제 캘린더 이름**을 사용해.
 
 ## 주요 명령
 
@@ -53,6 +59,4 @@ python3 ~/Documents/claude_skills/app_calendar_control/app_calendar_control.py -
 - "이번주 일정" / "다음주 일정" → `--query week` / `--query next-week`
 - "XX일 일정 추가해줘" → `--add` 실행
 - "XX 일정 지워줘" → `--delete` 실행
-- rich-agent와 연동: 회의 시스템에서 현빈 일정 조회 시 활용
-
 결과는 한국어로 정리해서 보여줘.
