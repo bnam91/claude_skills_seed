@@ -32,6 +32,15 @@ python3 ~/Documents/claude_skills/sheet_manager/sheet_manager.py append <spreads
 python3 ~/Documents/claude_skills/sheet_manager/sheet_manager.py clear <spreadsheet_id> --tab <탭이름> --range A2:D10
 ```
 
+### 6. 새 스프레드시트 생성
+```bash
+# 기본 생성
+python3 ~/Documents/claude_skills/sheet_manager/sheet_manager.py create --title "시트제목"
+
+# Drive 폴더 지정해서 생성
+python3 ~/Documents/claude_skills/sheet_manager/sheet_manager.py create --title "시트제목" --folder-id <폴더ID>
+```
+
 ## 사용 방법
 
 사용자의 요청을 분석하여 적절한 명령을 Bash 도구로 실행해줘.
@@ -41,6 +50,7 @@ python3 ~/Documents/claude_skills/sheet_manager/sheet_manager.py clear <spreadsh
 - "행 추가해줘" → append 실행
 - "탭 목록 보여줘" → tabs 실행
 - "삭제해줘" → clear 실행
+- "시트 만들어줘 / 스프레드시트 생성해줘" → create 실행
 
 스프레드시트 ID는 URL에서 추출:
 `https://docs.google.com/spreadsheets/d/<여기가_ID>/edit`
