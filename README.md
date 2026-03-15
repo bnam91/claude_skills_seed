@@ -7,8 +7,8 @@
 ## 1. 폴더 배치
 
 ```bash
-# commands → Claude Code가 읽는 스킬 명령어
-cp -r commands/* ~/.claude/commands/
+# skills → Claude Code가 읽는 스킬 명령어 (폴더 단위)
+cp -r skills/* ~/.claude/skills/
 
 # claude_skills → 스킬이 실행하는 Python 모듈
 cp -r claude_skills ~/Documents/claude_skills
